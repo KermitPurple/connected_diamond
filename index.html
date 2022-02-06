@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Connected Diamond</title>
+        <meta name="viewport" content="width=device-width">
+        <link href="index.css" type="text/css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js" defer></script>
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div class=dropdown>
+            <div class=dropdown-icon>▼</div>
+            <div class=dropdown-content>
+                <label for=polygon-sides>Polygon Sides</label>
+                <input name=polygon-sides id=polygon-sides type=range min=3 max=100 value=4 />
+                <label for=polygon-density>Polygon Density</label>
+                <input name=polygon-density id=polygon-density type=range min=2 max=100 value=15 />
+                <label for=angle-offset>Angle offset</label>
+                <input name=angle-offset id=angle-offset type=range min=0 max=360 value=0 step=any />
+                <div class="checkboxes">
+                    <label for=direct-connections>Direct</label>
+                    <input name=direct-connections id=direct-connections type=checkbox  />
+                    <label for=inverse-connections>Inverse</label>
+                    <input name=inverse-connections id=inverse-connections type=checkbox checked />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
