@@ -11,6 +11,7 @@ function setup(){
     createCanvas(windowWidth, windowHeight);
     radius = min(windowWidth, windowHeight) / 2;
     angleMode(DEGREES);
+    colorMode(HSL);
     stroke(255);
 }
 
@@ -32,6 +33,7 @@ function draw(){
         let points = points_at_angle(angle, density);
         if(prev != null)
             connect_points(prev, points);
+        stroke(color(angle, 100, 50));
         if(first == null)
             first = points;
         prev = points;
